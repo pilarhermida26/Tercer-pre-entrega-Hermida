@@ -1,0 +1,41 @@
+<div>
+    {% extends "FrutaSecaDelivery/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia %}
+        <p>
+         DESEA AGREGAR AL CARRITO ALGUNOS DE LOS SIGUIENTES PRODUCTOS, SELECCIONE:
+        </p>
+    
+        <div class="card" style="width: 80rem;">
+            <img src="https://www.itac-professional.com/wp-content/uploads/2021/06/pexels-polina-tankilevitch-3872425.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EN STOCK:</h5>
+                <p class="card-text">
+                    <ul><li>Nueces Peladas</li>
+                        <li>Pasas Negras</li>
+                        <li>Pasas Rubias</li>
+                        <li>Almendras Peladas</li>
+                        <li>Castañas de Caju</li></ul>
+
+                </p>
+                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+        </div>
+        <br>
+        <div class="card" style="width: 80rem;" >
+            <img src="https://www.esturirafi.com/wp-content/uploads/2014/05/semillas-chio-lino-sesamo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EN STOCK:</h5>
+                <p class="card-text">
+                    <ul><li>Semillas de girasol, chia, sesamo blanco y mix</li>
+                        <li>Mani con y sin sal</li>
+                        <li>Hongos Secos</li>
+                        <li>Tomates Secos</li></ul>
+
+                </p>
+                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+        </div>
+        
+        {% endblock %}
+</div>

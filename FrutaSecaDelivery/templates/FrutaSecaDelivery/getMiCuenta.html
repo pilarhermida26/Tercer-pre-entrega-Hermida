@@ -1,0 +1,21 @@
+<div>
+    {% extends "FrutaSecaDelivery/MiCuenta.html" %}
+    {% load static %}
+    
+    {% block getMiCuenta %}
+        <p>Consultar Cuenta:</p>
+        <br>
+        <form action="/FrutaSecaDelivery/buscarMiCuenta/" method="GET">
+            <input placeholder="Nombre" type="text" name="nombre" id="nombre">
+            <input type="submit" value="Search">
+        </form>
+
+        {% if MiCuenta %}
+            {% for cuenta in MiCuenta %}
+                <li> {{MiCuenta.nombre}} </li>
+                <li> {{MiCuenta.apellido}} </li>
+                <li> {{MiCuenta.email}} </li>
+            {% endfor %}
+        {% endif %}
+    {% endblock %}    
+</div>

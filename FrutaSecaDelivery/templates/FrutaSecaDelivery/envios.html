@@ -1,0 +1,29 @@
+<div>
+    {% extends "FrutaSecaDelivery/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+        
+        <div class="componenteEnvios">
+            
+            <div class="card" style="width: 80rem;">
+               
+                    <h2 class="card-title">Sin cargo:</h2>
+                    <h5 class="card-title">Ciudad Autonoma de Buenos Aires</h5>
+                    <h5 class="card-title">Provincia de Buenos Aires</h5>
+                    <p class="card-text">Por otros destinos consultar por mail:</p>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/" class="btn btn-primary">MAIL</a>
+                    <br>
+                    <p class="card-text">Por si necesita chequear su ubicación:</p>
+                    <a href="https://www.google.com/maps/dir//-11.935738,-76.697168/@-11.9357292,-76.7672085,12z?hl=es-419" class="btn btn-primary">MAPS</a>
+                    
+                    <br>
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/512/995/995329.png" class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+        </div>
+    
+        {% endblock %}
+</div>

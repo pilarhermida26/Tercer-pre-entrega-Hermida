@@ -1,0 +1,17 @@
+<div>
+    {% extends "FrutaSecaDelivery/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+        <p>Acá apareceran tus pedidos:</p>
+        <div class="card" style="width: 80rem;">
+            
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="http://127.0.0.1:8000/FrutaSecaDelivery/productos/" class="btn btn-primary">Hacer pedido</a>
+                <a href="#" class="btn btn-primary">Repetir ultimo pedido</a>
+            </div>
+        </div>
+        {% endblock %}
+</div>

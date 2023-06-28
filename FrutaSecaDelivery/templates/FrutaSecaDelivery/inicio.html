@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'FrutaSecaDelivery/css/pilarStyle.css'%}" rel="stylesheet"/>
+    <link href="{% static 'FrutaSecaDelivery/css/bootstrap.min.css'%}" rel="stylesheet"/>
+    <script src="{% static 'FrutaSecaDelivery/js/bootstrap.min.js'%}"></script>
+    <title>Inicio|FrutaSecaDelivery</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg  fixed-top bg-dark" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand navText" href="http://127.0.0.1:8000/FrutaSecaDelivery/inicio/   ">FRUTA SECA delivery</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Productos' %}">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Envios' %}">Envios</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'MiCuenta' %}">MiCuenta</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'MisPedidos' %}">MisPedidos</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contenido">
+        {% block contenidoQueCambia %}
+        <h1>Bienvenido a nuestra pagina web!</h1>
+        <h2>Te contamos un poco sobre nuestros productos:</h2>
+        <h4>La fruta seca o fruta desecada es un producto que se obtiene del secado realizado a diversas frutas especiales, propensas a este proceso; los frutos secos  no requieren generalmente de este proceso para ello.</h4>
+        
+        <img src="https://saludycardiologia.com/wp-content/uploads/2018/02/cardio-26-1200x900.jpg" float="navbar-toggler-right">
+
+        {% endblock %}
+
+    </div>
+    <footer></footer>
+</body>
+</html>
