@@ -37,10 +37,10 @@ def setCuenta(request):
 
    
 
-def getMiCuenta(request):
+def getCuenta(request):
     return render(request, "FrutaSecaDelivery/getMiCuenta.html")
 
-def buscarMiCuenta(request):
+def buscarCuenta(request):
     if request.GET["nombre"]:
         nombre = request.GET["nombre"]
         MiCuenta = cuenta.objects.filter(nombre = nombre)
