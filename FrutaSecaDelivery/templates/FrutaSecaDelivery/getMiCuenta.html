@@ -12,9 +12,9 @@
 
         {% if MiCuenta %}
             {% for cuenta in MiCuenta %}
-                <li> {{MiCuenta.nombre}} </li>
-                <li> {{MiCuenta.apellido}} </li>
-                <li> {{MiCuenta.email}} </li>
+                <li> {{cuenta.nombre}} </li>
+                <li> {{cuenta.apellido}} </li>
+                <li> {{cuenta.email}} </li>
             {% endfor %}
         {% endif %}
     {% endblock %}    
