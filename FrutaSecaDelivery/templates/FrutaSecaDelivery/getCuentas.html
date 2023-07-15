@@ -1,8 +1,8 @@
 <div>
-    {% extends "FrutaSecaDelivery/MiCuenta.html" %}
+    {% extends "FrutaSecaDelivery/cuentas.html" %}
     {% load static %}
     
-    {% block getMiCuenta %}
+    {% block getCuenta %}
         <p>Consultar Cuenta:</p>
         <br>
         <form action="/FrutaSecaDelivery/buscarCuenta/" method="GET">
@@ -10,8 +10,8 @@
             <input type="submit" value="Search">
         </form>
 
-        {% if MiCuenta %}
-            {% for cuenta in MiCuenta %}
+        {% if cuentas%}
+            {% for cuenta in cuentas %}
                 <li> {{cuenta.nombre}} </li>
                 <li> {{cuenta.apellido}} </li>
                 <li> {{cuenta.email}} </li>
